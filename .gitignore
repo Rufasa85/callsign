@@ -3,4 +3,4 @@ node_modules
 *.log
 
 # app specific
-public/js/main.js
+public

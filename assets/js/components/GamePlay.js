@@ -9,12 +9,12 @@ var GamePlay = React.createClass({
         return {
             currentTurn: true,
             turnColor: 'Red',
-            cards: _.sample(randomWords, 24)
+            cards: _.sample(randomWords, 25)
         }
     },
 
     handleClick: function() {
-        var color = this.state.currentTurn == true ? 'Red' : 'Blue';
+        var color = this.state.currentTurn == true ? 'Blue' : 'Red';
         this.setState({
             currentTurn: !this.state.currentTurn,
             turnColor: color
