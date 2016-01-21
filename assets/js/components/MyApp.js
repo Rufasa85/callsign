@@ -27,7 +27,7 @@ var MyApp = React.createClass({
         this.setState({content:<NewGame callback = {this.newGameCallback}/>})
     },
     newGameCallback: function() {
-        this.myGamesClick();
+        this.userGameClick();
     },
     loginClick:function() {
         this.setState({content:<Login/>})

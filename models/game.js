@@ -14,7 +14,8 @@ var PlayerSchema = mongoose.Schema({
 var GameSchema = mongoose.Schema({
   played: Date,
   createdBy: mongoose.Schema.Types.ObjectId,
-  players: [PlayerSchema],
+  blueLeader: PlayerSchema,
+  redLeader: PlayerSchema,
   words:[WordSchema]
 });
 
